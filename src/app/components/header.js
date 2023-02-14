@@ -1,22 +1,28 @@
 import Link from 'next/link'
+import styles from './Header.module.css'
 const links = [{
-    label: 'Home',
+    label: 'Inicio',
     route: '/'
 },{
-    label: 'About',
+    label: 'Sobre nosotros',
     route: '/about'
+},{
+    label: 'Blog',
+    route: '/posts'
 }]
 export default function Header(){
     return(
-        <header>
+        <header className={styles.header}>
             <nav>
-                {links.map (({label, route}) =>(
-                    <li key = {route}>
-                        <Link href = {route}>
-                            {label}
-                        </Link>
-                    </li>
-                ))}
+                <ul className={styles.navigation}>
+                    {links.map (({label, route}) =>(
+                        <li key = {route}>
+                            <Link href = {route}>
+                                {label}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>                
             </nav>
         </header>
     )
