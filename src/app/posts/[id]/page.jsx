@@ -1,4 +1,16 @@
-export default function Post({params}){
+import { fetchSinglePost } from "@/app/api/apiRest";
+export default async function Post({params}){
     const {id} = params;
-    return <h1>Esto es un post {id}</h1>
+    const post = await fetchSinglePost(id);
+    return(
+        <>
+            {post.map(post => (
+                <article key={post.nid}>
+                    <h2>{post.title}</h2>
+                    <div dangerouslySetInnerHTML={{__html: post.body}}></div>
+                </article>        
+            ))}
+        </>
+        
+    )
 }
