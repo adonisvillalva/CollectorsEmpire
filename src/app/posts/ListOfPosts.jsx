@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { getCollectors, fetchPosts } from "../api/apiRest"
+import { getCollectors, fetchPosts } from "@/app/api/apiRest"
 
 const col = getCollectors();
 

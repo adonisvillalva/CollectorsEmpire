@@ -1,5 +1,9 @@
 export default function HomePage(){
   return(
-    <h1>Esta es la appaasdsasd</h1>
+    <>
+      <section>
+        <h2>Nuevos Artículos</h2>
+      </section>
+    </>
   )
 }

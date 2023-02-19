@@ -1,23 +1,35 @@
 import Link from 'next/link'
 import styles from './Header.module.css'
+import Image from 'next/image'
+import logo from '@/public/Logo.png'
+
 const links = [{
     label: 'Inicio',
     route: '/'
 },{
-    label: 'Sobre nosotros',
-    route: '/about'
-},{
     label: 'Blog',
     route: '/posts'
+},{
+    label: 'Tienda',
+    route: 'https://store.collectors-empire.com/'
+},{
+    label: 'Contáctanos',
+    route: '/about'
+},{
+    label: 'Nosotros',
+    route: '/about'
 }]
 export default function Header(){
     return(
         <header className={styles.header}>
-            <nav>
+            <Link href="/">
+                <Image width={30} height={47.79} className={styles.logo} src={logo} alt='Collectors Empire'/>
+            </Link>
+            <nav className={styles.block_navigation}>
                 <ul className={styles.navigation}>
                     {links.map (({label, route}) =>(
-                        <li key = {route}>
-                            <Link href = {route}>
+                        <li className={styles.items_menu} key = {route}>
+                            <Link href = {route} data-text={label}>
                                 {label}
                             </Link>
                         </li>
