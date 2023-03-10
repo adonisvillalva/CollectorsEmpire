@@ -1,12 +1,14 @@
+import Link from "next/link"
 import styles from '@/styles/home/categories.module.scss'
 export default function NewPosts(){
     return(
-        <section>
+        <section className={styles.categories}>
             <h2>Categorías</h2>
             <nav>
                 <ul>
                     <li>
-                        <p>tesst</p>
+                        <Link href="/" className={styles.btn_categories}>test
+                        </Link>
                     </li>
                 </ul>
             </nav>

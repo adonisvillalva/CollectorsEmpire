@@ -19,6 +19,8 @@ Si deseas ver el portal puedes visitar: [Collector's empire](www.collectors-empi
 
 ## Versiones
 
--   v0.2    Verrsión inicial. Varios cambios dentro de la web y extracción de API.
--   v0.2.1  Implementado SASS - Inicio de la sección de categorías.
--   v0.2.2  Sección de nuevos artículos completo          
+-   v 0.2    Verrsión inicial. Varios cambios dentro de la web y extracción de API.
+-   v 0.2.1  Implementado SASS - Inicio de la sección de categorías.
+-   v 0.2.2  Sección de nuevos artículos completo          
+-   v 0.2.3  Inicio sección de categorías.  
+-   v 0.2.4  Cambio de fuente de texto.
