@@ -8,6 +8,7 @@ export default async function Post({params}){
                 <article key={post.nid}>
                     <h2>{post.title}</h2>
                     <div dangerouslySetInnerHTML={{__html: post.body}}></div>
+                    <div dangerouslySetInnerHTML={{__html: post.field_img_texto}}></div>
                 </article>        
             ))}
         </>

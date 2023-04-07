@@ -24,3 +24,4 @@ Si deseas ver el portal puedes visitar: [Collector's empire](www.collectors-empi
 -   v 0.2.2  Sección de nuevos artículos completo          
 -   v 0.2.3  Inicio sección de categorías.  
 -   v 0.2.4  Cambio de fuente de texto.
+-   v 0.2.41 Cambio de API.
